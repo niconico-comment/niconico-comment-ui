@@ -3,7 +3,7 @@ import {setDefaults, withInfo} from '@storybook/addon-info'
 import {setOptions} from '@storybook/addon-options'
 
 function loadStories() {
-    let req = require.context('./stories', true, /\.stories\.js$/)
+    let req = require.context('../src', true, /\.stories\.js$/)
 
     req.keys().forEach(filename => req(filename))
 }

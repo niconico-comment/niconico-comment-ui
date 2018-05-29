@@ -3,7 +3,7 @@ import {createLogger} from 'redux-logger'
 import createBrowserHistory from 'history/createBrowserHistory'
 import {routerMiddleware, syncHistoryWithStore} from 'react-router-redux'
 import createSagaMiddleware from 'redux-saga'
-import reducer from '../reducers'
+import reducer from '../reducer'
 
 
 export const browserHistory = createBrowserHistory()
