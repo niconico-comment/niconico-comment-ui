@@ -10,13 +10,15 @@ import LoginPage from './page/login'
 import RoomPage from './page/room'
 import RoomCommentPage from './page/roomComment'
 
+import 'bulma/css/bulma.css'
+
 const App = () => {
     const routing = (
         <Switch>
             <Route exact path='/login' component={LoginPage}/>
 
             <Authenticated>
-                <Route path='/' component={HomePage}/>
+                <Route exact path='/' component={HomePage}/>
 
                 <Route path='/rooms/:id' component={RoomPage}/>
                 <Route path='/rooms/:id/comments' component={RoomCommentPage}/>
